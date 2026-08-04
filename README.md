@@ -123,6 +123,13 @@ The backend exposes the following REST API routes under the /api/ prefix:
 
 Add screenshots of the dashboard, courier form, and tracking page here once the app is deployed or captured locally.
 
+## Future Improvements
+
+- Add authentication and role-based access control
+- Integrate a production database such as PostgreSQL
+- Add automated tests for the frontend and backend
+- Improve deployment pipelines with CI/CD
+
 ## Author
 
 Dhanu

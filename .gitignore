@@ -9,9 +9,11 @@ Thumbs.db
 # Python / Django
 __pycache__/
 *.py[cod]
+*.pyc
 *.pyo
 *.pyd
 *.so
+*.sqlite3-journal
 .Python
 build/
 develop-eggs/
