@@ -21,13 +21,23 @@ export default function Dashboard() {
   }, []);
 
   const loadCouriers = async () => {
-    try {
-      const res = await API.get("/couriers/");
+  try {
+    const res = await API.get("/couriers/");
+
+    console.log("API Response:", res.data);
+    console.log("Is Array:", Array.isArray(res.data));
+
+    if (Array.isArray(res.data)) {
       setCouriers(res.data);
-    } catch (err) {
-      console.log(err);
+    } else {
+      console.error("Expected an array but got:", res.data);
+      setCouriers([]);
     }
-  };
+  } catch (err) {
+    console.log(err);
+    setCouriers([]);
+  }
+};
 
   const total = couriers.length;
 
